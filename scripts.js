@@ -99,13 +99,13 @@ rmArr.style.display = 'none';
 var map = L.map('map').setView([-34.9833067, 138.6338448], 11);
 
 // Get map tiles + attribution
-L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=8uYUk2NvQhE0PNcYlA3D', {
-    attribution: '<a href="https://www.mapthttps://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=8uYUk2NvQhE0PNcYlA3Diler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=APPID', {
+    attribution: '<a href="https://www.mapthttps://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=APPID.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
 }).addTo(map);
 
 var locInMap = L.map('locIn').setView([-35.1505278,138.3285077], 9);
 
-L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=8uYUk2NvQhE0PNcYlA3D', {
+L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=APPID', {
         attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
 }).addTo(locInMap);
 
@@ -170,8 +170,8 @@ function updateData(id) {
             }
 
             // Concatenate API call URL
-            var apiCall = 'http://api.openweathermap.org/data/2.5/weather?lat=' + data[i].lat + '&lon=' + data[i].lon + '&units=metric&appid=3f585fd3319127084efff7d55b1e1090';
-            uvCall = 'http://api.openweathermap.org/data/2.5/uvi?appid=3f585fd3319127084efff7d55b1e1090&lat=' + data[i].lat + '&lon=' + data[i].lon;
+            var apiCall = 'http://api.openweathermap.org/data/2.5/weather?lat=' + data[i].lat + '&lon=' + data[i].lon + '&units=metric&appid=APPID';
+            uvCall = 'http://api.openweathermap.org/data/2.5/uvi?appid=APPID=' + data[i].lat + '&lon=' + data[i].lon;
 
             // Call API using var apiCall, then parse JSON object into function
             $.getJSON(apiCall, weatherCallback);
