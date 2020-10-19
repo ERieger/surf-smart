@@ -1,0 +1,11 @@
+003.1:
+	&quot;Adina Levy&quot; [<a href="https://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5</a>], <a href="https://commons.wikimedia.org/wiki/File:Seacliff_Beach.jpg">via Wikimedia Commons</a>
+
+003.2:
+	Bilby [<a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Optimist_on_the_beach.jpg">via Wikimedia Commons</a>
+
+003.3:
+	https://media-cdn.tripadvisor.com/media/photo-s/0a/47/5b/5c/seacliff-beach.jpg
+
+003.4:
+	https://cdn.holdfast.sa.gov.au/resized/generalimages/Parks-and-Reserves/5732/kingston_small4_a28930b60decd87861cb5491ed347d73_f7f37b158b3e9cda9481bba91eadaa88.jpg

@@ -1,0 +1,488 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*** NAVBAR ***/
+.header ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(15, 79, 123, 1) 0%, rgba(35, 128, 193, 1) 34%, rgba(41, 142, 214, 1) 100%);
+}
+
+.header li {
+  float: left;
+  margin: 5px;
+}
+
+.header li a {
+  display: block;
+  color: rgb(240, 240, 242);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.header li a:hover {
+  background-color: #111;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: rgb(48, 212, 178);
+  border-radius: 40px;
+}
+
+/* Image / logo properties */
+.logoS {
+  padding: 0px;
+  margin: 0px;
+  height: 40px;
+}
+
+#searchB {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+#searchB {
+  background-color: Transparent;
+  border: none;
+  outline: none;
+}
+
+#searchB img {
+  width: 52px;
+}
+
+/*##### Application Page Styles #####*/
+
+/* Set grid layout for page */
+.pageContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: calc(100vh - 84px);
+  grid-template-areas:
+    'map output';
+}
+
+/* Media query to better suit smaller screens */
+/* @media screen and (max-width: 1000px) {
+  .pageContent {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    'map'
+    'output';
+}
+  #map {
+    height: 50%;
+  }
+} */
+
+.output {
+  display: grid;
+  grid-area: output;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: max-content max-content max-content max-content auto max-content;
+  grid-template-areas:
+    'title title'
+    'subtitle subtitle'
+    'icOu tempOutput'
+    'weatherOutput weatherOutput'
+    'patTimes patTimes'
+    'carousel carousel';
+}
+
+#map {
+  grid-area: map;
+  height: 100%;
+  z-index: 0;
+}
+
+#title {
+  margin: 5px 10px 5px 10px;
+  padding: 0px 0px 5px 0px;
+  border-bottom: 2px solid rgb(48, 212, 178);
+  grid-area: title;
+}
+
+#subtitle {
+  margin: 5px 10px 5px 10px;
+  padding: 0px;
+  grid-area: subtitle;
+}
+
+#icOu {
+  grid-area: icOu;
+  text-align: end;
+}
+
+#tempOutput {
+  grid-area: tempOutput;
+  margin: auto;
+  color: rgb(240, 240, 242);
+  text-align: center;
+}
+
+#weatherOutput {
+  grid-area: weatherOutput;
+  margin: 5px auto 5px auto;
+}
+
+.weatherOutput {
+  border: 1px solid rgb(82, 90, 83);
+  text-align: center;
+}
+
+#weatherOutput tr:nth-child(odd) {
+  background: rgb(221, 226, 229)
+}
+
+#weatherOutput tr:nth-child(even) {
+  background: rgb(240, 240, 242)
+}
+
+#min {
+  background-color: rgb(48, 212, 178);
+}
+
+#max {
+  background-color: rgb(212, 59, 64);
+}
+
+#min,
+#max {
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+}
+
+#weatherIcon {
+  justify-self: start;
+}
+
+#outlook {
+  justify-self: end;
+}
+
+#patTimes {
+  grid-area: patTimes;
+  margin: none;
+  text-align: center;
+  color: rgb(240, 240, 242);
+  background-color: rgb(41, 142, 214);
+  table-layout: fixed;
+  margin: auto;
+}
+
+#patTimes tr,
+th {
+  border: 1px solid rgb(82, 90, 83);
+}
+
+#patTimes img {
+  width: 50px;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.carousel {
+  grid-area: carousel;
+  z-index: 0;
+}
+
+/*############ Home Page ############*/
+
+.headerHome ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.headerHome li {
+  float: right;
+  margin: 5px;
+}
+
+.headerHome li a {
+  display: block;
+  color: rgb(240, 240, 242);
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  align-content: middle;
+}
+
+/* Change the link color to #111 (black) on hover */
+.headerHome li a:hover {
+  background-color: #111;
+  border-radius: 10px;
+}
+
+/* Image / logo properties */
+.logoSHome {
+  padding: 0px;
+  margin: 0px;
+  height: 60px;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('images/bkCircSVG.svg');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.launchApp {
+  color: rgb(240, 240, 242);
+  position: relative;
+  left: 15%;
+}
+
+.launchApp h1 {
+  font-size: 50px;
+}
+
+.launchApp p {
+  font-size: 25px;
+}
+
+.launchApp a:hover {
+  background-color: #111;
+  border-radius: 50px;
+}
+
+.launchApp a {
+  display: block;
+  color: rgb(240, 240, 242);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: rgb(48, 212, 178);
+  border-radius: 40px;
+  margin-top: 10px;
+  width: 25%;
+}
+
+@media screen and (max-width: 992px) {
+  .home {
+    background-position: center;
+  }
+}
+
+/*############ Home Page ############*/
+
+.gridContainer {
+  display: grid;
+  text-shadow: 1px 1px 10px black;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: calc(50vh - 76px / 2) calc(50vh - 76px / 2);
+  grid-template-areas:
+    'gI1 gI2 gI3'
+    'gI4 gI5 gI6';
+}
+
+.gridContainer a {
+  color: rgb(240, 240, 242);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: rgb(48, 212, 178);
+  border-radius: 40px;
+}
+
+.gridContainer a:hover {
+  background-color: #111;
+  border-radius: 50px;
+}
+
+.gI1 {
+  grid-area: gI1;
+  background-image: url(images/ripBeach.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  margin: 10px 5px 5px 10px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.gI2 {
+  grid-area: gI2;
+  background-image: url(images/lsFlag.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  margin: 10px 5px 5px 5px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.gI3 {
+  grid-area: gI3;
+  background-image: url(images/sBoard.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  margin: 10px 10px 5px 5px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.gI4 {
+  grid-area: gI4;
+  background-image: url(images/bBottle.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  margin: 5px 5px 10px 10px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.gI5 {
+  grid-area: gI5;
+  background-image: url(images/jellyfish.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  margin: 5px 5px 10px 5px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.gI6 {
+  grid-area: gI6;
+  background-image: url(images/beachFirstAid.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  margin: 5px 10px 10px 5px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.gridContainer a {
+  display: block;
+  margin: 27.5vh auto 0 auto;
+  width: 35%;
+}
+
+/******** OVERLAY STYLES ********/
+/* The Overlay (background) */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+    '. . closeBtn'
+    '. overlayContent .'
+    '. . .';
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  grid-area: overlayContent;
+  position: relative;
+  color: rgb(240, 240, 242);
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  grid-area: colseBtn;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.overlay-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.overlay-content table {
+  margin: auto;
+}
+
+.overlay-content .ocCheck {
+  width: 20px;
+  height: 20px;
+}
+
+#addB {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border: none;
+  outline: none;
+}
+
+#addB img {
+  width: 52px;
+}
+
+#locIn {
+  height: 60%
+}
+
+#rmArr {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border: none;
+  outline: none;
+}
+
+#rmArr img {
+  width: 52px;
+}

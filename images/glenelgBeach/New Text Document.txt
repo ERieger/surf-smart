@@ -1,0 +1,11 @@
+002.01:
+	User: (WT-shared) Puzzlement at  wts wikivoyage [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Pier_at_Glenelg_Beach.jpg">via Wikimedia Commons</a>
+
+002.02:
+	<a href="https://en.wikipedia.org/wiki/User:AtD" class="extiw" title="en:User:AtD">AtD</a> at <a class="external text" href="https://en.wikipedia.org">English Wikipedia</a> [<a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>], <a href="https://commons.wikimedia.org/wiki/File:GlenelgBeach.jpg">via Wikimedia Commons</a>
+
+002.03:
+	eyeintim [<a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Adelaide_-_Glenelg_Beach_(4158746916).jpg">via Wikimedia Commons</a>
+
+002.04:
+	User:Orderinchaos [<a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>], <a href="https://commons.wikimedia.org/wiki/File:OIC_glenelg_beach_australia_day.jpg">via Wikimedia Commons</a>

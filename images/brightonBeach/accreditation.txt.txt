@@ -1,0 +1,11 @@
+img 001.1:
+	Cfparson [<a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>], <a href="https://commons.wikimedia.org/wiki/File:BrightonSA.JPG">via Wikimedia Commons</a>
+
+img 001.2:
+	Cfparson [<a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>], <a href="https://commons.wikimedia.org/wiki/File:BrightonSA-se.JPG">via Wikimedia Commons</a>
+
+img 001.3:
+	salnig [<a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Brighton_Beach_Adelaide_-_panoramio.jpg">via Wikimedia Commons</a>
+
+img 001.4:
+	Bilby [<a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Mirror_leaving_the_beach.jpg">via Wikimedia Commons</a>
