@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/github/license/ERieger/surf-smart)
 
-> `surf-smart` is a basic application designed to inform beach users of the weather conditions in costal areas.
+> `surf-smart` is a basic application designed to inform beach users of the weather conditions in coastal areas.
 
 ## Installation
 
